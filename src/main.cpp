@@ -15,13 +15,13 @@ using namespace std;
 void updateIconsCount() {
     CSimpleIni ini;
     ini.LoadFile("geode/config/IconsCount.ini");
-    uint8_t cube = stoi(ini.GetValue("iconsPatch", "cube"));
-    uint8_t ship = stoi(ini.GetValue("iconsPatch", "ship"));
-    uint8_t ball = stoi(ini.GetValue("iconsPatch", "ball"));
-    uint8_t ufo = stoi(ini.GetValue("iconsPatch", "ufo"));
-    uint8_t wave = stoi(ini.GetValue("iconsPatch", "wave"));
-    uint8_t robot = stoi(ini.GetValue("iconsPatch", "robot"));
-    uint8_t spider = stoi(ini.GetValue("iconsPatch", "spider"));
+    uint8_t cube = stoi(ini.GetValue("IconsCount", "cube"));
+    uint8_t ship = stoi(ini.GetValue("IconsCount", "ship"));
+    uint8_t ball = stoi(ini.GetValue("IconsCount", "ball"));
+    uint8_t ufo = stoi(ini.GetValue("IconsCount", "ufo"));
+    uint8_t wave = stoi(ini.GetValue("IconsCount", "wave"));
+    uint8_t robot = stoi(ini.GetValue("IconsCount", "robot"));
+    uint8_t spider = stoi(ini.GetValue("IconsCount", "spider"));
     /// BY RUHAX | GUSCHIN
 
     // cube = 143 = 8f;                                                                             cube default = 142 = 8e;
@@ -95,23 +95,23 @@ void __fastcall update_H(GameManager* self, void*, float dt) {
 
 #include "cocosHooks.hpp" //ну и псих бляtь
 
-DWORD WINAPI iconsPatch(void* hModule) {
+DWORD WINAPI IconsCount(void* hModule) {
     CSimpleIni ini;
     ini.LoadFile("geode/config/IconsCount.ini");
-    if (!(ini.KeyExists("iconsPatch", "cube")))
-        ini.SetValue("iconsPatch", "cube", "142", ";------------------------\n; DISCOVERED BY GUSCHIN\n; https://github.com/zGuschin/IconPatch\n;------------------------\n\n; org count of cubes 142");
-    if (!(ini.KeyExists("iconsPatch", "ship")))
-        ini.SetValue("iconsPatch", "ship", "51", "; org count of ships 51");
-    if (!(ini.KeyExists("iconsPatch", "ball")))
-        ini.SetValue("iconsPatch", "ball", "42", "; org count of BALLS 42");
-    if (!(ini.KeyExists("iconsPatch", "ufo")))
-        ini.SetValue("iconsPatch", "ufo", "35", "; org count of ufos 35");
-    if (!(ini.KeyExists("iconsPatch", "wave")))
-        ini.SetValue("iconsPatch", "wave", "35", "; org count of waves 35");
-    if (!(ini.KeyExists("iconsPatch", "robot")))
-        ini.SetValue("iconsPatch", "robot", "26", "; org count of robots 26");
-    if (!(ini.KeyExists("iconsPatch", "spider")))
-        ini.SetValue("iconsPatch", "spider", "17", "; org count of robots 17");
+    if (!(ini.KeyExists("IconsCount", "cube")))
+        ini.SetValue("IconsCount", "cube", "142", ";------------------------\n; DISCOVERED BY GUSCHIN\n; https://github.com/zGuschin/IconPatch\n;------------------------\n\n; org count of cubes 142");
+    if (!(ini.KeyExists("IconsCount", "ship")))
+        ini.SetValue("IconsCount", "ship", "51", "; org count of ships 51");
+    if (!(ini.KeyExists("IconsCount", "ball")))
+        ini.SetValue("IconsCount", "ball", "42", "; org count of BALLS 42");
+    if (!(ini.KeyExists("IconsCount", "ufo")))
+        ini.SetValue("IconsCount", "ufo", "35", "; org count of ufos 35");
+    if (!(ini.KeyExists("IconsCount", "wave")))
+        ini.SetValue("IconsCount", "wave", "35", "; org count of waves 35");
+    if (!(ini.KeyExists("IconsCount", "robot")))
+        ini.SetValue("IconsCount", "robot", "26", "; org count of robots 26");
+    if (!(ini.KeyExists("IconsCount", "spider")))
+        ini.SetValue("IconsCount", "spider", "17", "; org count of robots 17");
     ini.SaveFile("geode/config/IconsCount.ini");
     MH_SafeInitialize();
     HOOK(base + 0xce440, update);
@@ -124,6 +124,6 @@ DWORD WINAPI iconsPatch(void* hModule) {
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
     if (ul_reason_for_call == DLL_PROCESS_ATTACH)
-        CreateThread(0, 0, iconsPatch, hModule, 0, 0);
+        CreateThread(0, 0, IconsCount, hModule, 0, 0);
     return TRUE;
 }

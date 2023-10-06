@@ -5,11 +5,11 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} /MANIFEST:NO")
 cmake_policy(SET CMP0057 NEW)
 
-project ("IconsCountPatch")
+project ("IconsCountEditor")
 set(developer "user95401")
 set(version "v1.0.0")
 set(description "change gmd icons count via config file")
-set(repository "https://github.com/user95401/iconsCountPatch")
+set(repository "https://github.com/user95401/IconsCountEditor")
 set(issues_url "https://discord.gg/89VGJH6QQg")
 set(issues_info "U can write about it on <cb>user666's discord...</c>")
 set(LIBRARY_OUTPUT_PATH "${CMAKE_CURRENT_LIST_DIR}") # dll output
