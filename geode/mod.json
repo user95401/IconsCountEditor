@@ -1,0 +1,39 @@
+{
+	"geode": "1.0.0-beta.16",
+	"version": "${version}",
+	"id": "${developer}.${PROJECT_NAME}",
+	"name": "${PROJECT_NAME}",
+	"developer": "${developer}",
+	"description": "${description}",
+	"repository": "${repository}",
+	"issues": {
+		"url": "${issues_url}",
+		"info": "${issues_info}"
+	},
+	"resources": {
+		"files": [
+			"Resources/*"
+		],
+		"sprites": [
+			"Resources/*"
+		]
+	},
+	"settings": {
+		"header": {
+			"name": "                    ",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"sprites_list.ini": {
+			"name": "IconsCount.ini",
+			"description": "open up IconsCount.ini",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"footer": {
+			"name": "                    ",
+			"type": "color",
+			"default": "#1d1d1d"
+		}
+	}
+}

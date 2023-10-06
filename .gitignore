@@ -1,0 +1,8 @@
+#ueaa
+.vs
+.git
+build
+out
+
+.dll
+.lib
