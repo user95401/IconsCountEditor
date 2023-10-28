@@ -16,6 +16,7 @@ public:
 };
 inline bool HideEveryLabel;
 inline bool DontProcessFrames;
+inline FLAlertLayer* popuptoreplace;
 
 void CreateCocosHooks();
 

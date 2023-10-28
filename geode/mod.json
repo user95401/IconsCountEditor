@@ -24,6 +24,53 @@
 			"type": "color",
 			"default": "#1d1d1d"
 		},
+		"cube": {
+			"name": "cube option 6525",
+			"description": "open up cube value popup...",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"ship": {
+			"name": "ship option 6525",
+			"description": "open up ship value popup...",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"ball": {
+			"name": "ball option 6525",
+			"description": "open up ball value popup...",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"ufo": {
+			"name": "ufo option 6525",
+			"description": "open up ufo value popup...",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"wave": {
+			"name": "wave option 6525",
+			"description": "open up wave value popup...",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"robot": {
+			"name": "robot option 6525",
+			"description": "open up robot value popup...",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"spider": {
+			"name": "spider option 6525",
+			"description": "open up spider value popup...",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"hrthing": {
+			"name": "    ",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
 		"sprites_list.ini": {
 			"name": "IconsCount.ini",
 			"description": "open up IconsCount.ini",
