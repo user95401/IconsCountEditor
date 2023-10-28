@@ -1,6 +1,6 @@
-# IconsCountPatch
+# IconsCountEditor
 
-fixes forcing icon kit with ini file.
+change gmd icons count via config file
 
 Made with curly-eureka, only for Windows.
 
