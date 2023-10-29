@@ -1,6 +1,5 @@
 ﻿#include "cocosHooks.hpp"
 #include "SimpleIni.h"
-#include "ValueSetupPopup.hpp"
 
 #include "hooks.hpp"
 void CreateCocosHooks() {
@@ -34,11 +33,19 @@ CCLabelBMFont* CCLabelBMFont_create_H(const char* str, const char* fntFile) {
         //config ini
         if (bool((std::string(str) == "IconsCount.ini")) && std::string(fntFile) == "bigFont.fnt") {
             ReplaceAllFramesByName::by = "GJ_infoIcon_001.png";
-            ReplaceAllFramesByName::to = "geode.loader/pencil.png";
+            ReplaceAllFramesByName::to = "geode.loader/changelog.png";
             str = "IconsCount.ini";
         }
         if (std::string(str) == "open up IconsCount.ini")
             ShellExecute(NULL, ("open"), (CCFileUtils::sharedFileUtils()->fullPathForFilename("geode/config/IconsCount.ini", 0).c_str()), NULL, NULL, 1);
+        //open up autocalc value popup...
+        if (bool((std::string(str) == "Auto calculation option 6525")) && std::string(fntFile) == "bigFont.fnt") {
+            ReplaceAllFramesByName::by = "GJ_infoIcon_001.png";
+            ReplaceAllFramesByName::to = "geode.loader/pencil.png";
+            str = "Auto calculation";
+        }
+        if (std::string(str) == "open up autocalc value popup...")
+            popuptoreplace = ValueSetupPopup::create("Auto calculation", "IconsCount", "geode/config/IconsCount.ini", "Should mod calculate icons count by loaded textures?")->isBoolean();
         //open up cube value popup...
         if (bool((std::string(str) == "cube option 6525")) && std::string(fntFile) == "bigFont.fnt") {
             ReplaceAllFramesByName::by = "GJ_infoIcon_001.png";

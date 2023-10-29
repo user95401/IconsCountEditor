@@ -24,6 +24,18 @@
 			"type": "color",
 			"default": "#1d1d1d"
 		},
+		"sprites_list.ini": {
+			"name": "IconsCount.ini",
+			"description": "open up IconsCount.ini",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
+		"Auto calculation": {
+			"name": "Auto calculation option 6525",
+			"description": "open up autocalc value popup...",
+			"type": "color",
+			"default": "#1d1d1d"
+		},
 		"cube": {
 			"name": "cube option 6525",
 			"description": "open up cube value popup...",
@@ -63,17 +75,6 @@
 		"spider": {
 			"name": "spider option 6525",
 			"description": "open up spider value popup...",
-			"type": "color",
-			"default": "#1d1d1d"
-		},
-		"hrthing": {
-			"name": "    ",
-			"type": "color",
-			"default": "#1d1d1d"
-		},
-		"sprites_list.ini": {
-			"name": "IconsCount.ini",
-			"description": "open up IconsCount.ini",
 			"type": "color",
 			"default": "#1d1d1d"
 		},
